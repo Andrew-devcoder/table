@@ -1,8 +1,32 @@
 .button {
     padding: 10px;
-    width: 80%;
+    width: 65%;
 
     text-transform: uppercase;
     color: $textWhite;
     border-radius: 5px;
+
+    &--dark-grey {
+        padding: 16px 0 8px;
+        background-color: $bgDarkGrey;
+        border-bottom: 8px solid #404040;
+    }
+
+    &--green {
+        padding: 16px 0 8px;
+        background-color: $green;
+        border-bottom: 8px solid #79B026;
+    }
+
+    &--red {
+        padding: 16px 0 8px;
+        background-color: $pink;
+        border-bottom: 8px solid #DF3945;
+    }
+
+    &--blue {
+        padding: 16px 0 8px;
+        background-color: $blue;
+        border-bottom: 8px solid #15736F;
+    }
 }
