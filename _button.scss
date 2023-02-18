@@ -8,6 +8,16 @@
 
     cursor: pointer;
 
+    & a {}
+
+    &:hover {
+        scale: 1.1;
+    }
+
+    &:active {
+        scale: 0.9;
+    }
+
     &--dark-grey {
         padding: 16px 0 8px;
         background-color: $bgDarkGrey;
