@@ -46,6 +46,10 @@
     &--blue {
         background-color: $blue;
     }
+
+    &--grey {
+        background-color: #DDDDDD;
+    }
 }
 
 .text-rigt-big {
@@ -74,5 +78,13 @@ tbody {
 
     & td {
         padding: 20px 0;
+    }
+
+    & td:nth-child(odd) {
+        background-color: #F4F4F4;
+    }
+
+    & td:nth-child(even) {
+        background-color: #EEEEEE;
     }
 }
