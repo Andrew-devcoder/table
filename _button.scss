@@ -2,6 +2,7 @@
     padding: 10px;
     width: 65%;
 
+    font-weight: 800;
     text-transform: uppercase;
     color: $textWhite;
     border-radius: 5px;
@@ -26,18 +27,18 @@
     &--green {
         padding: 16px 0 8px;
         background-color: $green;
-        border-bottom: 8px solid #79B026;
+        border-bottom: 8px solid #7D9B39;
     }
 
     &--red {
         padding: 16px 0 8px;
         background-color: $pink;
-        border-bottom: 8px solid #DF3945;
+        border-bottom: 8px solid #EC4A43;
     }
 
     &--blue {
         padding: 16px 0 8px;
         background-color: $blue;
-        border-bottom: 8px solid #15736F;
+        border-bottom: 8px solid #0E6971;
     }
 }

@@ -1,39 +1,60 @@
+// TODO add drop shadow 
+// TODO change icons free 
+
 .table {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     border: 15px solid #3A4965;
     border-collapse: collapse;
 
-    font-weight: 800;
+    text-align: center;
+
     text-transform: uppercase;
 
-    color: $textGrey;
+    color: $textDarkGrey;
 
     &__header {
+        font-weight: 800;
+        background-color: $bgWhite;
 
         & th {
             padding: 15px 0;
             width: 25%;
+            height: 80px;
         }
 
         & span {
-            font-size: 1.5rem;
+            font-size: 21px;
+        }
+
+    }
+
+    &__body {
+        & tr {
+            text-align: center;
+        }
+
+        & tr:nth-child(odd) {
+            background-color: $bgLightGrey;
+        }
+
+        & tr:nth-child(even) {
+            background-color: $bgGrey;
         }
     }
 
-    &__price {
+    &__footer {
+        font-weight: 800;
+        background-color: $bgWhite;
+
         & td {
-            padding: 10px 5px;
+            padding: 30px 0;
         }
     }
 }
 
 .background-color {
     color: $textWhite;
-
-    &--white {
-        background-color: $bgWhite;
-    }
 
     &--green {
         background-color: $green;
@@ -46,45 +67,36 @@
     &--blue {
         background-color: $blue;
     }
-
-    &--grey {
-        background-color: #DDDDDD;
-    }
 }
 
-.text-rigt-big {
-    text-align: right;
-    font-size: 2.6rem;
+.price {
+    padding: 10px;
+    font-size: 48px;
+    font-weight: 400;
 }
 
-tbody {
+.price sup+sub {
+    margin-left: -1.5em;
 
-    & tr {
-        text-align: center;
-    }
+}
 
-    & tr:nth-child(odd) {
-        background-color: $bgLightGrey;
-    }
+sub,
+sup {
+    font-size: 40%;
+    font-weight: 400;
+}
 
-    & tr:nth-child(even) {
-        background-color: $bgGrey;
-    }
+sub {
+    vertical-align: baseline;
 }
 
 
-.tfoot {
-    text-align: center;
+.table-shadow {
+    // box-shadow: -1px 0 5px 2px rgba(0, 0, 0, 0.2);
+}
 
-    & td {
-        padding: 20px 0;
-    }
-
-    & td:nth-child(odd) {
-        background-color: #F4F4F4;
-    }
-
-    & td:nth-child(even) {
-        background-color: #EEEEEE;
-    }
+.icon {
+    font-size: 20px;
+    color: $textGrey;
+    vertical-align: center;
 }
