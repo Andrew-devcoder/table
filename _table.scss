@@ -90,12 +90,17 @@ sub {
 }
 
 
-.table-shadow {
-    // box-shadow: -2px 0 2px rgba(0, 0, 0, 0.2), 2px 0 2px rgba(0, 0, 0, 0.2);
-}
-
 .icon {
     font-size: 20px;
     color: $textGrey;
     vertical-align: middle;
+}
+
+
+.shadow-right {
+    box-shadow: inset 4px 0 4px -2px rgba(0, 0, 0, 0.30);
+}
+
+.shadow-left {
+    box-shadow: inset -4px 0 4px -2px rgba(0, 0, 0, 0.30);
 }
